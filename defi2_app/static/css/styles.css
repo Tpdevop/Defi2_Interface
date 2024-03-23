@@ -1,0 +1,60 @@
+/* styles.css */
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.navbar-brand a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.navbar-menu {
+    float: right;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Centered buttons styles */
+.centered-buttons {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
