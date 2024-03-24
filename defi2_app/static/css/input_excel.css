@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;  
+    background-color: #e0e9f7; /* Soft background color */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; 
+    margin: 20px auto;
+}
+
+.introduction {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="file"] {
+    background-color: #e8e8e8;
+    color: #444;
+    padding: 12px 20px;
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+label[for="file"]:hover {
+    background-color: #d8d8d8;
+}
+
+button {
+    background-color: #e0f0e9; /* Example soft green */
+    color: #444;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #c5e3d2;
+}
+
+select  { 
+   border-radius: 6px;
+   padding: 8px 12px;
+   border: 1px solid #ddd;
+}
+
+#show-solution, 
+#show-map {
+    display: block; /* Display as block for better spacing */
+    margin: 15px 0; 
+}
+
+#solution {
+    margin-top: 20px;
+}
+
+#optimal-route {
+    font-weight: bold;
+}
+/* ... (Your existing CSS) */
+/* ... your existing CSS ... */
+
+form {
+    margin-bottom: 25px; 
+}
+
+.form-group { /* Added class for styling */
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 500; 
+}
+
+select {
+    width: 100%; 
+    padding: 12px 30px; /* Increased padding */
+    border: 1px solid #ddd; 
+    border-radius: 6px; 
+    appearance: none; 
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23444'><polygon points='12 5 8 9 4 5 12 5'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+}
+
+

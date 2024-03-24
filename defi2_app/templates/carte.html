@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/carte.css' %}">
+</head>
+<body>
+    
+    
+
+    <div class="container">
+        <div id="map"></div>
+        <div id="button-container">
+            <button id="show-itinerary-button">Show Itinerary</button>
+        </div>
+        
+    </div>
+
+    <script src="{% static 'js/carte.js' %} " defer></script>
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ YOUR_API_KEY }}&callback=initMap&libraries=places&v=beta" defer></script>
+
+</body>
+</html>

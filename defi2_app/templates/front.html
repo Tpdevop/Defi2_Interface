@@ -1,0 +1,68 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/input_excel.css' %}">
+</head>
+<body>
+
+    <header>
+        </header>
+
+    <main>
+        <section class="introduction">
+            <div class="container">
+                <div class="upload-button">
+                    <input type="file" id="file" accept=".xlsx" onchange="uploadFile()">
+                    <label for="file">uploder un fichier Excel</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="algorithm-selection">
+            <div class="container">
+                <form>
+                    <label for="algorithm">Choisir un algorithme :</label>
+                    <div class="form-group">
+                    <select name="algorithm" id="algorithm" aria-placeholder="Algorythme solution">
+                        <option value="approximation">Algorithme d'Approximation</option>
+                        <option value="aco">Algorithme de Colonie de Fourmis (ACO)</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="visualization">Visualisation graphique de la solution :</label>
+                    <select name="visualization" id="visualization" aria-placeholder="Visualisation">
+                        <option value="wilayas">Capitales des Wilayas</option>
+                        <option value="mougataas">Mougataas</option>
+                    </select>
+          </div>
+          <div class="form-group">
+            <label for="algorithm">Caffichage du solution :</label>
+                    <select name="solution" id="solution" aria-placeholder="affichage du solution">
+                        <option value="graph">graphique</option>
+                        <option value="carte">Carte</option>
+                    </select>
+</div>
+
+<button id="show-solution">Afficher la solution</button>
+                </form>
+              
+                <div id="solution" style="display: none;">
+                    <!-- <p id="optimal-route">Route optimale: <span id="RO">[Route]</span></p> -->
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/graphlib/2.1.7/graphlib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dijkstrajs/1.1.6/dijkstra.min.js"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>
